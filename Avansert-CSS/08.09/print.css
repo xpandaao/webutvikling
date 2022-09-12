@@ -1,0 +1,9 @@
+aside{
+    display: none;
+}
+#breadcrumbs{
+    display: none;
+}
+nav ul li a{
+    display: none;
+}

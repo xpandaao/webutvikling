@@ -1,0 +1,59 @@
+<!--Det kom opp 16 error's og 5 warning's når jeg tok dokumentet i validator første gangen-->
+
+<!DOCTYPE html>
+<!--1. Hadde ikkeblitt satt en html doctype, selv om dokummentet startet med <html>-->
+<html lang="nb">
+    <!--2. Det var heller ikke noe angitt språk-->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <!--3. I href var det glemt ett gåsetegn så style.css var ikke linket i html dokumentet-->
+        <title>Web eksamen del 1</title>
+    </head>
+<!--4. Head taggen lå inni body taggen, den skal aldri ligge i body taggen siden den inneholder info som maskinen skal lese, ikke vi.-->
+
+    <body>
+       
+        <nav>
+            <h1>Logo</h1>
+                <ul>
+                    <li> <a href="#">Boatswain schooner</a></li>
+                    <li> <a href="#">Account lookout</a></li>
+                    <li> <a href="#">Sail ho shrouds</a></li>
+                </ul>
+            <!--5. Li har ikke lov til å ligge under nav, det kan enten ligge under ol, ul eller menu. Jeg la det under ul så listen ikke bli nummerert på nettsiden.-->
+        </nav>
+        <header>
+            <h2>Yar Pirate Ipsum</h2>
+            <!--6. H1 taggen har allerede blitt brukt under nav for teksten logo, ett html dokument bør bare ha en h1 tagg, så endret den til h2-->
+            <p>Prow scuttle parrel provost Sail ho shrouds spirits boom mizzenmast yardarm. Pinnace holystone mizzenmast quarter crow's nest nipperkin grog yardarm hempen halter furl.</p>
+            <a class="button">Les mer</a>
+        </header>
+        <div id="main">
+            <article>
+                <h2>Prow scuttle</h2>
+                <!--7. Var skrevet som h1 tagg, bør bare ha en h1 tagg under samme html dokument, ellers vil det bli vanskelig for maskinen å lese og sette det sammen-->
+                <p>Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors.</p>
+                <a href="#">Les mer</a>
+            </article>
+            <!--8. Article hadde ikke en slutt tagg så maskinen hadde vanskligheter for å lese det-->
+            <article>
+                <h2>Jack Tar transom</h2>
+                <!--9. Denne var igjen skrevet som en h1 tagg, byttet den til h2-->
+                <p>Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors.</p>
+                <a href="#">Les mer</a>
+            </article>
+            <article>
+                <h2>Trysail Sail</h2>
+                <!--10. Igjen enda en h1 tagg, byttet til h2 slik at den blir tatt som en underoverskrift i steden for hoved overskrift-->
+                <p>Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors.</p>
+                <a href="#">Les mer</a>
+            </article>
+        </div>
+        <footer>
+            <span>Twitter</span>
+            <span>Facebook</span>
+            <span>Instagram</span>
+        </footer>
+    </body>
+</html>
