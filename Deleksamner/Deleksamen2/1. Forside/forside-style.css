@@ -14,6 +14,27 @@ body{
                          "aside"
                          "footer";
     grid-template-columns: 1fr;
+    background-color: #FEF5ED;
+}
+header{
+    grid-area: header;
+}
+
+#main-menu{
+    position: absolute;
+
+}
+
+main{
+    grid-area: main;
+}
+
+aside{
+    grid-area: aside;
+}
+
+footer{
+    grid-area: footer;
 }
 
 @media only screen and (min-width: 900px){
