@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+
+    <link href="font/css/fontawesome.css" rel="stylesheet">
+    <link href="font/css/brands.css" rel="stylesheet">
+    <link href="font/css/solid.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/forside-style.css">
+    <title>Deleksamen 2</title>
+</head>
+
+<body>
+    <div id="front-page-container">
+        <!--Her begynner header-->
+        <header>
+            <!--Her starter hovedmenyen-->
+            <nav>
+                <!--La til logo siden den skal den skal kunne bli trykket på omg føre til forsiden-->
+                <h3><a href="forside.html"><img id="logo" src="images/logo.png" alt="logo-bilde"></a></h3>
+                <h3><a href="forside.html"><img id="logo2" src="images/logo.png" alt="logo-bilde"></a></h3>
+                <!--Referanse for logo bildet: <a href="https://www.vecteezy.com/free-png/logo">Logo PNGs by Vecteezy</a>-->
+                <a href="javascript:void(0)" id="menu" onclick="openNav()"><i class="fa-solid fa-bars"></i></a>
+                <ul id="main-menu">
+                    <li><a id="close" onclick="closeNav()"><i class="fa-solid fa-x"></i></a></li>
+                    <li><a href="forside.html">Hjem</a></li>
+                    <li><a href="uu-vs-seo.html">UU vs SEO</a></li>
+                    <li><a href="cms.html">CMS</a></li>
+                    <li><a href="analyse.html">Analyse</a></li>
+                    <li><a href="kontakt-oss.html">Kontakt oss</a></li>
+                </ul> 
+            </nav>
+        </header>
+        <!--Her slutter header og navigering-->
+        <!--Her er en seksjon som jeg ville ha med-->
+        <section>
+            <h1>Velkommen til min første nettside</h1>
+            <p>I faget web design lærer vi å designe nettsider slik som denne.</p>
+            <p>Siden dette er min første nettside er jeg ganske stolt av det jeg har fått til!</p>
+            <p>Det vi lærer i faget syntes jeg er ganske morsomt og gleder meg til å lære mer om det!</p>
+            <!-- Referanse link for bakgrunnsbildet brukt på nettsiden: <a href="https://www.vecteezy.com/free-photos">Free Stock photos by Vecteezy</a>-->
+        </section>
+        <!--Her starter hovedinnholdet-->
+        <main>
+            <article id="article-1">
+                <img src="images/uu-vs-seo.jpg" alt="bilde">
+                <!--Referanse link for bildet brukt for artikkel 1: <a href="https://www.vecteezy.com/free-photos">Free Stock photos by Vecteezy</a>-->
+                <h3>UU vs SEO</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua nisi vitae.</p>
+                <a href="uu-vs-seo.html">Les mer</a>
+            </article>
+            <article id="article-2">
+                <img src="images/cms.jpg" alt="bilde">
+                <!--Referanse link for bildet brukt for artikkel 2: <a href="https://www.vecteezy.com/free-photos">Free Stock photos by Vecteezy</a>-->
+                <h3>CMS</h3>
+                <p>Quis varius quam quisque id diam vel quam elementum. Nam aliquam eiusmod tempor et tortor consequat id porta nibh. Nisi vitae suscipit tellus.</p>
+                <a href="cms.html">Les mer</a>
+            </article>
+            <article id="article-3">
+                <img src="images/analyse.jpg" alt="bilde">
+                <!--Referanse link for bildet brukt for artikkel 3: <a href="https://www.vecteezy.com/free-photos">Free Stock photos by Vecteezy</a>-->
+                <h3>Analyse</h3>
+                <p>Sit amet dictum sit amet justo donec enim diam vulputate. Nisl tincidunt eget nullam non nisi. Enim sit amet venenatis urna cursus.</p>
+                <a href="analyse.html">Les mer</a>
+            </article>
+        </main>
+        <!--Her slutter hovedinnholdet-->
+        <footer>
+            <p><a href="kontakt-oss.html">Kontakt oss</a></p>
+            <p>Deleksamen 2 høst 2022 Ida Stensrud</p>
+        </footer>
+    </div>
+    <script>
+        function openNav() {
+          document.getElementById("main-menu").style.height = "100%";
+        }
+        
+        function closeNav() {
+          document.getElementById("main-menu").style.height = "0%";
+        }
+        //Referanse for ham-bar funksjonen: https://www.w3schools.com/howto/howto_js_curtain_menu.asp
+    </script>
+</body>
+</html>

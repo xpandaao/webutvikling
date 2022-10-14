@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Passions+Conflict&display=swap');
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Montserrat', sans-serif;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        nav{
+            display: flex;
+            align-items: baseline;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        #logo{
+            flex-basis: 100%;
+            text-align: center;
+        }
+
+        #logo a{
+            letter-spacing: -4px;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+        section{
+            text-align: center;
+            border-top: 1px solid #efefef;
+            padding: 3rem 0;
+            margin-top: 3rem;
+        }
+        h1{
+            font-size: 40px;
+            font-weight: 600;
+        }
+        #welcome-text{
+            font-family: 'arial', sans-serif;
+            width: 50%;
+            margin: 0 auto;
+        
+        }
+        #container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        main{
+            margin: 2rem 0;
+            text-align: center;
+            border-top: 1px solid #efefef;
+        }
+
+        h2{
+            margin: 5rem 0;
+            font-size: 30px;
+        }
+
+        article{
+            width: 100%;
+            margin: 2rem 0;
+            overflow: auto;
+            background-color: rgb(25, 25, 65);
+            text-align: left;
+        }
+
+        h3, article p{
+            width: 70%;
+            float: right;
+            padding: 1rem;
+            margin:0;
+            color: rgb(214, 11, 11);
+        }
+        h3 a{
+            font-size: 24px;
+            color: rgb(214, 11, 11);
+            font-weight: 600;
+           
+        }
+        article img{
+            /*Det under 'beskjærer' bildet*/
+            width: 250px; 
+            height: 250px; 
+            object-fit: cover;
+            float: left;
+        }
