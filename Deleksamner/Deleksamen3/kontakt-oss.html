@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+
+    <link href="font/css/fontawesome.css" rel="stylesheet">
+    <link href="font/css/brands.css" rel="stylesheet">
+    <link href="font/css/solid.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/kontakt-oss.css">
+    <title>Kontakt oss</title>
+</head>
+
+<body>
+    <div id="container">
+        <!--Her begynner header-->
+        <header>
+            <!--Her begynner navigering-->
+            <nav>
+                <h3><a href="forside.html"><img id="logo" src="images/logo.png" alt="logo-bilde"></a></h3>
+                <h3><a href="forside.html"><img id="logo2" src="images/logo.png" alt="logo-bilde"></a></h3>
+                <!--Referanse for logo bildet: <a href="https://www.vecteezy.com/free-png/logo">Logo PNGs by Vecteezy</a>-->
+                <a href="javascript:void(0)" id="menu" onclick="openNav()"><i class="fa-solid fa-bars"></i></a>
+                <ul id="main-menu">
+                    <li><a id="close" onclick="closeNav()"><i class="fa-solid fa-x"></i></a></li>
+                    <li><a href="forside.html">Hjem</a></li>
+                    <li><a href="uu-vs-seo.html">UU vs SEO</a></li>
+                    <li><a href="cms.html">CMS</a></li>
+                    <li><a href="analyse.html">Analyse</a></li>
+                    <li><a href="kontakt-oss.html">Kontakt oss</a></li>
+                </ul> 
+            </nav>
+        </header>
+        <!--her slutter header og navigering-->
+        <!--La til en section for å gi den et bakgrunns-bilde-->
+        <section id="bakgrunn">
+            <p>--</p>
+            <p>--</p>
+            <h1>Kontakt oss</h1>
+            <p>--</p>
+            <p>--</p>
+        </section>
+        <!--Her begynner hovedinnholdet-->
+        <main>
+            <p><a id="tilbake" href="forside.html">Tilbake</a></p>
+            <section id="info">
+                <h3>Kontakt informasjon:</h3>
+                    <ul>
+                        <li>Epost: imstensr@hiof.no</li>
+                        <li>Tlf.: 999000</li>
+                    </ul>
+                <h3>Sosiale Medier:</h3>
+                    <ul id="sosiale-medier">
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul> 
+            </section>
+        </main>
+        <!--Her slutter hovedinnholdet-->
+        <footer>
+            <p><a href="kontakt-oss.html">Kontakt oss</a></p>
+            <p>Deleksamen 2 høst 2022 Ida Stensrud</p>
+        </footer>  
+        <script>
+            function openNav() {
+            document.getElementById("main-menu").style.height = "100%";
+            }
+            
+            function closeNav() {
+            document.getElementById("main-menu").style.height = "0%";
+            }
+            //Referanse for ham-bar funksjonen: https://www.w3schools.com/howto/howto_js_curtain_menu.asp
+        </script> 
+    </div>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+
+    <link href="font/css/fontawesome.css" rel="stylesheet">
+    <link href="font/css/brands.css" rel="stylesheet">
+    <link href="font/css/solid.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="css/forside-style.css">
+    <link rel="icon" href="images/logo.png">
+    <!--Referanse for ikon kode: https://developers.google.com/search/docs/appearance/favicon-in-search-->
+    <title>Deleksamen 4</title>
+</head>
+
+<body>
+    <div id="container" itemscope itemtype="https://schema.org/Article">
+        <!--Her begynner header-->
+        <header>
+            <!--Her starter hovedmenyen-->
+            <nav>
+                <!--La til logo siden den skal den skal kunne bli trykket på omg føre til forsiden-->
+                <h3><a href="forside.html"><img id="logo" src="images/logo.png" alt="logo-bilde"></a></h3>
+                <h3><a href="forside.html"><img id="logo2" src="images/logo.png" alt="logo-bilde"></a></h3>
+                <!--Referanse for logo bildet: <a href="https://www.vecteezy.com/free-png/logo">Logo PNGs by Vecteezy</a>-->
+                <!--Inspirasjon for Logo kode i css og html: Sara Stensrud-->
+                <a href="javascript:void(0)" id="menu" onclick="openNav()" itemprop="potentialAction"><i class="fa-solid fa-bars"></i></a>
+                <ul id="main-menu">
+                    <li itemprop="potentialAction"><a id="close" onclick="closeNav()"><i class="fa-solid fa-x"></i></a></li>
+                    <li><a href="forside.html" itemprop="potentialAction">Hjem</a></li>
+                    <li><a href="uu-vs-seo.html" itemprop="potentialAction">UU vs SEO</a></li>
+                    <li><a href="cms.html" itemprop="potentialAction">CMS</a></li>
+                    <li><a href="analyse.html" itemprop="potentialAction">Analyse</a></li>
+                    <li><a href="kontakt-oss.html" itemprop="potentialAction">Kontakt oss</a></li>
+                </ul> 
+            </nav>
+        </header>
+        <!--Her slutter header og navigering-->
+        <!--Her er en seksjon som jeg ville ha med-->
+        <section itemprop="speakable">
+            <h1>Velkommen til min første nettside</h1>
+            <p>I faget web design lærer vi å designe nettsider slik som denne.</p>
+            <p>Siden dette er min første nettside er jeg ganske stolt av det jeg har fått til!</p>
+            <p>Det vi lærer i faget syntes jeg er ganske morsomt og gleder meg til å lære mer om det!</p>
+            <!-- Referanse link for bakgrunnsbildet brukt på nettsiden: <a href="https://www.vecteezy.com/free-photos">Free Stock photos by Vecteezy</a>-->
+        </section>
+        <!--Her starter hovedinnholdet-->
+        <main itemprop="articleBody">
+            <article id="article-1" itemprop="articleSection">
+                <img src="images/uu-vs-seo.jpg" alt="blide av pc" itemprop="image">
+                <!--Referanse link for bildet brukt for artikkel 1: <a href="https://www.vecteezy.com/free-photos">Free Stock photos by Vecteezy</a>-->
+                <h3 itemprop="name">UU vs SEO</h3>
+                <p itemprop="abstract">UU eller Universell Utforming er et begrep som blir brukt innen design, IKT, arkitektur osv.</p>
+                <a href="uu-vs-seo.html" itemprop="potentialAction">Les mer</a>
+            </article>
+            <article id="article-2" itemprop="articleSection">
+                <img src="images/cms.jpg" alt="bilde av lyspære" itemprop="image">
+                <!--Referanse link for bildet brukt for artikkel 2: <a href="https://www.vecteezy.com/free-photos">Free Stock photos by Vecteezy</a>-->
+                <h3 itemprop="name">CMS</h3>
+                <p itemprop="abstract">CMS som står for <span lang="en">Content Management System</span>, det vil si at det er et verktøy som gir deg muligheten til å redigere og organisere innholdet på din nettbutikk eller nettside på ett sted.</p>
+                <a href="cms.html" itemprop="potentialAction">Les mer</a>
+            </article>
+            <article id="article-3" itemprop="articleSection">
+                <img src="images/analyse.jpg" alt="bilde av pc og notatblokk" itemprop="image">
+                <!--Referanse link for bildet brukt for artikkel 3: <a href="https://www.vecteezy.com/free-photos">Free Stock photos by Vecteezy</a>-->
+                <h3 itemprop="name">Analyse</h3>
+                <p itemprop="abstract">Til dags dato har ikke nettsiden min noe synlige tilbakemeldinger til brukeren, men om den skulle blitt offentlig gjort kan jeg legge til en funksjon som viser hvor brukeren er på menypunktet.</p>
+                <a href="analyse.html" itemprop="potentialAction">Les mer</a>
+            </article>
+            <article>
+                <img src="images/Facebook.png" alt="Facebook logo" itemprop="image">
+                <!--Referanselink for bilde brukt for Facebook: <a href="https://www.vecteezy.com/png/13212095-facebook-3d-illustration">Facebook 3d Illustration PNGs by Vecteezy</a>-->
+                <h3>Facebook</h3>
+                <p>Kontakt oss gjerne via Facebook</p>
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i>Facebook</a>
+            </article>
+            <article>
+                <img src="images/Twitter.png" alt="Twitter logo" itemprop="image">
+                <!--Referanse link for bilde brukt for Twitter: <a href="https://www.vecteezy.com/png/13191636-twitter-3d-illustration">Twitter 3d Illustration PNGs by Vecteezy</a>-->
+                <h3>Twitter</h3>
+                <p>Eller Twitter hvis det funker bedre</p>
+                <a href="https://www.twitter.com/"><i class="fa-brands fa-twitter"></i>Twitter</a>
+            </article>
+            <article>
+                <img src="images/Instagram.png" alt="Instagram logo" itemprop="image">
+                <!--Referanse link for bildet brukt for Instagram: <a href="https://www.vecteezy.com/png/13212099-instagram-3d-illustration">Instagram 3d Illustration PNGs by Vecteezy</a>-->
+                <h3>Instagram</h3>
+                <p>Ellers så har vi også Instagram</p>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i>Instagram</a>
+            </article>
+        </main>
+        <!--Her slutter hovedinnholdet-->
+        <footer>
+            <a href="#" class="fa fa-facebook"><span lang="en">Share</span></a>
+            <a href="#" class="fa fa-twitter"><span lang="en">Share</span></a>
+            <a href="#" class="fa fa-pinterest"><span lang="en">Share</span></a>
+            <!--Referanse for sosialemedier: https://www.w3schools.com/howto/howto_css_social_media_buttons.asp--> 
+            <p><a href="kontakt-oss.html" itemprop="potentialAction">Kontakt oss</a></p>
+            <p itemprop="copyrightNotice">Deleksamen 4 høst 2022 Ida Stensrud</p>
+        </footer>
+    </div>
+    <script>
+        function openNav() {
+          document.getElementById("main-menu").style.height = "100%";
+        }
+        
+        function closeNav() {
+          document.getElementById("main-menu").style.height = "0%";
+        }
+        //Referanse for ham-bar funksjonen: https://www.w3schools.com/howto/howto_js_curtain_menu.asp
+    </script>
+</body>
+</html>

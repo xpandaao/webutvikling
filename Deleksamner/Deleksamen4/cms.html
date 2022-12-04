@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+
+    <link href="font/css/fontawesome.css" rel="stylesheet">
+    <link href="font/css/brands.css" rel="stylesheet">
+    <link href="font/css/solid.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="css/cms.css">
+    <link rel="icon" href="images/logo.png">
+    <!--Referanse for ikon kode: https://developers.google.com/search/docs/appearance/favicon-in-search-->
+    <title>CMS</title>
+</head>
+
+<body>
+    <div id="container" itemscope itemtype="https://schema.org/Article">
+        <!--Her begynner header-->
+        <header>
+            <!--Her starter hovedmenyen-->
+            <nav>
+                <!--La til logo siden den skal den skal kunne bli trykket på omg føre til forsiden-->
+                <h3><a href="forside.html"><img id="logo" src="images/logo.png" alt="logo-bilde"></a></h3>
+                <h3><a href="forside.html"><img id="logo2" src="images/logo.png" alt="logo-bilde"></a></h3>
+                <!--Referanse for logo bildet: <a href="https://www.vecteezy.com/free-png/logo">Logo PNGs by Vecteezy</a>-->
+                <!--Inspirasjon for Logo kode i css og html: Sara Stensrud-->
+                <a href="javascript:void(0)" id="menu" onclick="openNav()" itemprop="potentialAction"><i class="fa-solid fa-bars"></i></a>
+                <ul id="main-menu">
+                    <li itemprop="potentialAction"><a id="close" onclick="closeNav()"><i class="fa-solid fa-x"></i></a></li>
+                    <li><a href="forside.html" itemprop="potentialAction">Hjem</a></li>
+                    <li><a href="uu-vs-seo.html" itemprop="potentialAction">UU vs SEO</a></li>
+                    <li><a href="cms.html" itemprop="potentialAction">CMS</a></li>
+                    <li><a href="analyse.html" itemprop="potentialAction">Analyse</a></li>
+                    <li><a href="kontakt-oss.html" itemprop="potentialAction">Kontakt oss</a></li>
+                </ul> 
+            </nav>
+        </header>
+        <!--Her slutter header og navigering-->
+        <!--La til en section for å gi den et bakgrunns-bilde-->
+        <section id="bakgrunn" itemprop="speakable">
+            <h1 itemprop="headline">CMS</h1>
+        </section>
+        <!--Her begynner hovedinnholdet-->
+        <main>
+            <p itemprop="potentialAction"><a id="tilbake" href="forside.html">Tilbake</a></p>
+            <article itemprop="articleBody">
+                <h3 itemprop="articleSection">Hva er CMS</h3>
+                <!--Nettside brukt for informasjon: https://guilty.no/blogg/hva-er-cms-->
+                <p itemprop="about">CMS som står  for <span lang="en">Content Management System</span>, det vil si at det er et verktøy som gir deg muligheten til å redigere og organisere innholdet på din nettbutikk eller nettside på ett sted. Det finnes selvfølgelig mange forskjellige varianter av CMS som blant annet <span lang="en">Wordpress, Canvas</span> eller <span lang="en">Dropbox.</span> Man kan bruke CMS for å tilpasse, administrere og redigere innlegg inne på nettstedet, ellers ville du ha måttet gå fysisk inn i koden man har skrevet for å endre på noe. Noen CMS-typer tilbyr løsninger som lar deg enkelt se det innholdet du redigerer <span lang="en">«live»</span> på nettsiden.</p>
+
+                <h3 itemprop="articleSection"><span lang="en">Headless CMS</span></h3>
+                <!--Nettsider brukt for å finne informasjon om headless CMS: https://guilty.no/blogg/headless-cms-slik-er-det-til-forskjell-fra-et-tradisjonelt-cms og https://aws.amazon.com/what-is/api/-->
+                <p itemprop="about">I et <span lang="en">headless CMS</span> vil alt som du ser på nettsiden være separert fra hvor og hvordan innholdet blir lagd, og innholdet blir hentet via et API som står for <span lang="en">Application Programming Interface.</span> Det betyr att det vil bli mulig for to komponenter til å samarbeide med hverandre via protokoller og definisjoner. Dette gir altså mer fleksibilitet enn hvis man hadde brukt et tradisjonelt CMS. Hvis du allerede har en ferdig og fungerende nettside hvor du ønsker å forbedre det med et CMS, vil da et <span lang="en">headless CMS</span> være det beste valget siden det ikke er noe avhengig mappestrukturer eller spesifikke teknologier.</p>
+                <h3 itemprop="articleSection">Tradisjonell CMS</h3>
+                <!--Nettside brukt for informasjon: https://guilty.no/blogg/headless-cms-slik-er-det-til-forskjell-fra-et-tradisjonelt-cms-->
+                <p itemprop="about">Et tradisjonelt CMS, som for eksempel <span lang="en">Joomla</span> eller <span lang="en">Wordpress</span>, er et publiseringssystem hvor du har orden på alt på ett sted. Det vil si att man har et admin-panel hvor man kan redigere, opprette og slette innhold, og i tillegg til dette har det en database hvor alt av innhold lagres. Siden det da er en kode som henter innholdet i en ferdig mal, er alt tett sammenkoblet. Det vil da si at hvordan nettsiden bygges opp på og måten du henter innhold på vil da være forhåndsdefinert. Skal du ha en nettside til f.eks. en bedrift vil det være praktisk å velge et tradisjonelt CMS, så lenge man ikke er avhengig av spesifikke teknologier som går over begrensningene CMS-et har satt. Det vil altså bety att hvis bedriftens nettside ikke har bruk for avansert funksjonalitet og integrasjoner vil tradisjonell CMS være det beste valget.</p>
+                <h3 itemprop="articleSection">Andre typer CMS</h3>
+                <!--Har brukt mentimeter presentasjonen, https://www.mentimeter.com/app/presentation/alug53jbdcanf8sobtepwfwd1n2ov3vd/xuzryphpf5wt, som hjelpemiddel for å finne ut de forskjellige cms typene og brukt disse nettsidene for å finne mer informasjon: https://heretto.com/what-is-a-component-content-management-system/ og https://www.aiim.org/what-is-document-imaging og https://www.hyland.com/en/resources/terminology/enterprise-content-management/what-is-ecm-->
+                <p itemprop="about">I tillegg til headless og tradisjonell CMS finnes det andre varianter av CMS, noen av dem er CCMS, DMS og DAM. CCMS står for <span lang="en">Component Content Management System</span> og er et system som følger versjoner, lenker og metadata fra hver komponent som f.eks. <span lang="en">Storyblock.</span> Det blir for det meste brukt av store organisasjoner som trenger en måte å holde alt av innhold organisert og lett tilgjengelig. DMS som betyr <span lang="en">Document Management System</span> er et system og program som lagrer f.eks. elektroniske bilder og filer. Det blir ofte brukt for å holde orden på elektroniske filer av enkeltpersoner eller organisasjoner. Noen eksempler på dette er både <span lang="en">dropbox</span> og <span lang="en">google drive.</span> DAM eller <span lang="en">Digital Asset Management</span> er ofte brukt av organisasjoner for å organisere, finne hente, lagre og dele hele innholds katalogen demmes fra bare ett sted. Det vil også gi muligheten for at man kan gi kontrollert tilgang til hele innholds biblioteker, altså alt av bilder, videoer, filer, lyder, presentasjoner, dokumenter og mye mer. Eksempel på dette er <span lang="en">Canto, Jira</span> eller<span lang="en">Bynder</span> .</p>
+            </article>
+            <h3 itemprop="headline">Fordeler og ulemper</h3>
+            <!--Nettside brukt som inspirasjon for tabellen: https://dev.to/flippedcoding/how-to-make-a-table-without-using-the-html-table-elements-5e11-->
+            <div id="tabell">
+                <div class="column-border">
+                    <div class="row-border-1" itemprop="speakable">Forskjellige typer CMS</div>
+                    <div class="row-border" itemprop="speakable">CCMS</div>
+                    <div class="row-border" itemprop="speakable">DMS</div>
+                    <div class="row-border" itemprop="speakable">DAM</div>
+                </div>
+                <div class="column-border">
+                    <div class="row-border-1" itemprop="speakable">Fordeler</div>
+                    <div class="row-border" itemprop="speakable">Bra innholds nøyaktighet, forbedret modularitet, sporbar, når seerne på de foretrekkende mediene, enkle koblinger og vedlikehold av innhold, man sparer kostnader, god kontroll over dokumenter.</div>
+                    <div class="row-border" itemprop="speakable">Bedre sikkerhet og kontroll, lett å hente dokumenter, lett å redigere, sparer tid, holder oversikt over alle endringer, sparer på kostnader.</div>
+                    <div class="row-border" itemprop="speakable">Slipper å lete i evigheter etter en fil eller ett dokument, lar deg gjenbruke filer, gir kontrollert tilgang, gir deg kontekst, kan måle innhold.</div>
+                </div>
+                <div class="column-border">
+                    <div class="row-border-1" itemprop="speakable">Ulemper</div>
+                    <div class="row-border" itemprop="speakable">Er enkeltkilde, gjenbruker innhold, strukturert fil behandling, utgivelseshåndtering.</div>
+                    <div class="row-border" itemprop="speakable">All informasjon er tilgjengelig globalt, små selskap kan finne det som vanskelig å håndtere, hacking eller virus kan være en veldig stor trussel for selskapet.</div>
+                    <div class="row-border" itemprop="speakable">Kan være vanskelig for alle å bruke, kan være komplisert, kan være dyrt.</div>
+                </div>
+                <div class="column-border">
+                    <div class="row-border-1" itemprop="speakable">Likheter</div>
+                    <div class="row-border" itemprop="speakable">Har god kontroll over innhold, må ha en eller annen tilgang til teknologi.</div>
+                    <div class="row-border" itemprop="speakable">Har god kontroll over innhold, må ha en eller annen tilgang til teknologi.</div>
+                    <div class="row-border" itemprop="speakable">Har god kontroll over innhold, må ha en eller annen tilgang til teknologi.</div>
+                </div>
+                <div class="column-border">
+                    <div class="row-border-1" itemprop="speakable">Ulikheter</div>
+                    <div class="row-border" itemprop="speakable">Bruker komponenter og moduler for å bygge et dokument</div>
+                    <div class="row-border" itemprop="speakable">Lagrer elektroniske dokumenter</div>
+                    <div class="row-border" itemprop="speakable">Er et bibliotek for digitalt innhold</div>
+                </div>
+            </div>
+            <article>
+                <h3 itemprop="headline">Kilder som er brukt til innholdet</h3>
+                <p itemprop="potentialAction"><a href="https://guilty.no/blogg/headless-cms-slik-er-det-til-forskjell-fra-et-tradisjonelt-cms"><span lang="en">Guilty</span>.no</a>, lest 24. Oktober 2022 kl: 10.53, skrevet av <span lang="en">guilty</span>.no</p>
+                <p itemprop="potentialAction"><a href="https://guilty.no/blogg/hva-er-cms">Hva er cms</a>, lest 25. Oktober 2022 kl: 18.34, skrevet av <span lang="en">guilty</span>.no</p>
+                <p itemprop="potentialAction"><a href="https://aws.amazon.com/what-is/api/"><span lang="en">What is API</span></a>, lest 25. Oktober 2022 kl: 18.47, skrevet av AWS</p>
+                <p itemprop="potentialAction"><a href="https://heretto.com/what-is-a-component-content-management-system/"><span lang="en">What is CCMS</span></a>, lest 25. Oktober 2022 kl: 19.23, skrevet av <span lang="en">John Baker</span></p>
+                <p itemprop="potentialAction"><a href="https://www.aiim.org/what-is-document-imaging">DMS</a>, lest 25 Oktober 2022 kl: 19:56, skrevet av aiim.org</p>
+                <p itemprop="potentialAction"><a href="https://www.bynder.com/en/what-is-digital-asset-management/?_bg=133637822826&_bt=585638481018&_bk=what%20is%20digital%20asset%20management&_bm=e&_bn=g&gclid=EAIaIQobChMI7P_v9P79-gIVOIxoCR0itQQ1EAAYBCAAEgJw5fD_BwE">DAM</a>, lest 26. Oktober kl: 14:38, skrevet av <span lang="en">Bynder.com</span></p>
+            </article>
+            <article>
+                <img src="images/Facebook.png" alt="Facebook logo" itemprop="image">
+                <!--Referanselink for bilde brukt for Facebook: <a href="https://www.vecteezy.com/png/13212095-facebook-3d-illustration">Facebook 3d Illustration PNGs by Vecteezy</a>-->
+                <h3>Facebook</h3>
+                <p>Kontakt oss gjerne via Facebook</p>
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i>Facebook</a>
+            </article>
+            <article>
+                <img src="images/Twitter.png" alt="Twitter logo" itemprop="image">
+                <!--Referanse link for bilde brukt for Twitter: <a href="https://www.vecteezy.com/png/13191636-twitter-3d-illustration">Twitter 3d Illustration PNGs by Vecteezy</a>-->
+                <h3>Twitter</h3>
+                <p>Eller Twitter hvis det funker bedre</p>
+                <a href="https://www.twitter.com/"><i class="fa-brands fa-twitter"></i>Twitter</a>
+            </article>
+            <article>
+                <img src="images/Instagram.png" alt="Instagram logo" itemprop="image">
+                <!--Referanse link for bildet brukt for Instagram: <a href="https://www.vecteezy.com/png/13212099-instagram-3d-illustration">Instagram 3d Illustration PNGs by Vecteezy</a>-->
+                <h3>Instagram</h3>
+                <p>Ellers så har vi også Instagram</p>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i>Instagram</a>
+            </article>
+        </main>
+        <!--Her slutter hovedinnholdet-->
+        <footer>
+            <a href="#" class="fa fa-facebook"><span lang="en">Share</span></a>
+            <a href="#" class="fa fa-twitter"><span lang="en">Share</span></a>
+            <a href="#" class="fa fa-pinterest"><span lang="en">Share</span></a>
+            <!--Referanse for sosialemedier: https://www.w3schools.com/howto/howto_css_social_media_buttons.asp--> 
+            <p><a href="kontakt-oss.html" itemprop="potentialAction">Kontakt oss</a></p>
+            <p itemprop="copyrightNotice">Deleksamen 4 høst 2022 Ida Stensrud</p>
+        </footer>
+    </div> 
+        <script>
+            function openNav() {
+            document.getElementById("main-menu").style.height = "100%";
+            }
+            
+            function closeNav() {
+            document.getElementById("main-menu").style.height = "0%";
+            }
+            //Referanse for ham-bar funksjonen: https://www.w3schools.com/howto/howto_js_curtain_menu.asp
+        </script>
+</body>
+</html>

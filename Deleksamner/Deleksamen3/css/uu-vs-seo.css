@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'IBM Plex Sans', sans-serif;
+    margin: 0;
+    background-color: #FEF5ED;
+}
+
+#container{
+    display: grid;
+    grid-template-areas: "header"
+                         "section"
+                         "main"
+                         "footer";
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+header{
+    grid-area: header;
+    height: fit-content;
+}
+
+#logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90px;
+    height: auto;
+}
+
+#logo2{
+    display: none;
+}
+
+header nav a{
+    color: #ADC2A9;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    transition: 0.3s;
+}
+
+header nav a:hover{
+    color: #D3E4CD;
+}
+
+header nav ul{
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    list-style: none;
+}
+
+#menu{
+    padding-left: 1rem;
+}
+
+#main-menu{
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(254, 245, 237);
+  background-color: rgba(254, 245, 237, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+#close{
+    text-align: right;
+}
+header{
+    grid-area: header;
+    height: fit-content;
+}
+
+#logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90px;
+    height: auto;
+}
+
+#logo2{
+    display: none;
+}
+
+header nav a{
+    color: #ADC2A9;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    transition: 0.3s;
+}
+
+header nav a:hover{
+    color: #D3E4CD;
+}
+
+header nav ul{
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    list-style: none;
+}
+
+#menu{
+    padding-left: 1rem;
+}
+
+#main-menu{
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(254, 245, 237);
+  background-color: rgba(254, 245, 237, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+#close{
+    text-align: right;
+}
+
+section{
+    grid-area: section;
+    background-image: url(background-image/uu-vs-seo.jpg);
+    background-size: cover;
+    padding: 1rem;
+    color: white;
+}
+section p{
+    color: transparent;
+}
+
+main{
+    grid-area: main;
+    display: grid;
+    /*flex-wrap: wrap;*/
+    gap: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: #ADC2A9;
+    margin: 0 1.5%;
+}
+
+main a:hover{
+    color: #D3E4CD;
+}
+
+#tilbake{
+    color: #ADC2A9;
+}
+
+#tilbake:hover{
+    color: #D3E4CD;
+}
+
+main article{
+    flex-grow: 1;
+    flex-basis: 30%;
+    color: #ADC2A9;
+    box-shadow: inset 0 -3em 3em rgba(218, 210, 203, 0.4), 0 0 0 2px rgba(218, 210, 203, 0.8), 
+    0.3em 0.3em 0em rgba(218, 210, 203, 0.6);
+    border-radius: 2px;
+    text-align: center;
+    margin: 0 5%;
+}
+/*Referanse for css shadow box kode: https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow*/
+
+#tabell{
+    display: flex;
+}
+.column-border{
+    margin-bottom: 1em;
+    width: 100%;
+}
+.row-border-1{
+    border: 1px rgb(203 195 188) solid;
+    height: 3rem;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    align-content: center; 
+}
+
+.row-border{
+    border: 1px rgb(203 195 188) solid;
+    height: 74rem;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    align-content: center;
+}
+
+main article a{
+    color: #ADC2A9
+}
+
+footer{
+    grid-area: footer;
+    background-color: #dad2cb;
+    color: #8d9e8a;
+}
+
+footer a{
+    color: #8d9e8a;
+}
+
+footer a:hover{
+    color: #ADC2A9;
+}
+@media only screen and (min-width: 420px){
+    .row-border{
+        height: 65rem;
+    }
+}
+
+@media only screen and (min-width: 460px){
+    .row-border{
+        height: 55rem;
+    }
+}
+
+@media only screen and (min-width: 530px){
+    .row-border{
+        height: 47rem;
+    }
+}
+
+@media only screen and (min-width: 650px){
+    .row-border{
+        height: 36rem;
+    }
+}
+
+@media only screen and (min-width: 800px){
+    .row-border{
+        height: 29rem;
+    }
+}
+
+
+@media only screen and (min-width: 900px){
+    #container{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "header header header"
+                             "section section section"
+                             "main main main"
+                             "footer footer footer";
+        grid-gap: 1rem;
+        grid-row-gap: 1rem;
+    }
+
+    header nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+
+    #logo{
+        display: none;
+    }
+
+    #logo2{
+        display: block;
+        width: 90px;
+        height: auto;
+        margin-left: 1rem;
+    }
+
+    header nav ul li{
+        display: inline-block;
+    }
+
+    #main-menu{
+        display: flex !important;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 1rem;
+        position: relative;
+    }
+
+    #menu{
+        display: none;
+    }
+
+    #close{
+        display: none;
+    }
+
+    .row-border{
+        height: 25rem;
+    }
+
+    footer{
+        grid-area: footer;
+        background-color: #dad2cb;
+    }
+
+}
+
+@media only screen and (min-width: 1050px){
+    .row-border{
+        height: 20rem;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .row-border{
+        height: 18rem;
+    }
+}
+
+@media only screen and (min-width: 1300px){
+    .row-border{
+        height: 16rem;
+    }
+}

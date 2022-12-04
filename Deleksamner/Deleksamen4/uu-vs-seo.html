@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+
+    <link href="font/css/fontawesome.css" rel="stylesheet">
+    <link href="font/css/brands.css" rel="stylesheet">
+    <link href="font/css/solid.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="css/uu-vs-seo.css">
+    <link rel="icon" href="images/logo.png">
+    <!--Referanse for ikon kode: https://developers.google.com/search/docs/appearance/favicon-in-search-->  
+    <title>UU vs SEO</title>
+</head>
+
+<body>
+    <div id="container" itemscope itemtype="https://schema.org/Article">
+        <!--Her begynner header-->
+        <header>
+            <!--Her starter hovedmenyen-->
+            <nav>
+                <!--La til logo siden den skal den skal kunne bli trykket på omg føre til forsiden-->
+                <h3><a href="forside.html"><img id="logo" src="images/logo.png" alt="logo-bilde"></a></h3>
+                <h3><a href="forside.html"><img id="logo2" src="images/logo.png" alt="logo-bilde"></a></h3>
+                <!--Referanse for logo bildet: <a href="https://www.vecteezy.com/free-png/logo">Logo PNGs by Vecteezy</a>-->
+                <!--Inspirasjon for Logo kode i css og html: Sara Stensrud-->
+                <a href="javascript:void(0)" id="menu" onclick="openNav()" itemprop="potentialAction"><i class="fa-solid fa-bars"></i></a>
+                <ul id="main-menu">
+                    <li itemprop="potentialAction"><a id="close" onclick="closeNav()"><i class="fa-solid fa-x"></i></a></li>
+                    <li><a href="forside.html" itemprop="potentialAction">Hjem</a></li>
+                    <li><a href="uu-vs-seo.html" itemprop="potentialAction">UU vs SEO</a></li>
+                    <li><a href="cms.html" itemprop="potentialAction">CMS</a></li>
+                    <li><a href="analyse.html" itemprop="potentialAction">Analyse</a></li>
+                    <li><a href="kontakt-oss.html" itemprop="potentialAction">Kontakt oss</a></li>
+                </ul> 
+            </nav>
+        </header>
+        <!--Her slutter header og navigasjon-->
+        <!--La til en section for å gi den et bakgrunns-bilde-->
+        <section id="bakgrunn" itemprop="speakable">
+            <h1 itemprop="headline">UU vs SEO</h1>
+        </section>
+        <!--Her begynner hovedinnholdet-->
+        <main>
+            <p itemprop="potentialAction"><a id="tilbake" href="forside.html">Tilbake</a></p>
+            <article>
+                <h3>UU</h3>
+                <p>UU eller Universell Utforming er et begrep som blir brukt innen <span lang="en">design</span>, IKT, arkitektur osv. Ideen bak universell utforming er at flest mulig skal kunne aktivt delta i samfunnet uavhengig av funksjonsevne. UU blir ofte brukt slikt at de med annerledes funksjonsevner skal slippe å måtte bruke ekstra hjelpemidler eller for at det skal bli for vanskelig for å f.eks. finne informasjon som kan være enkelt å finne for andre. UU har syv prinsipper som det går ut på, men Norge har i tillegg lovreguleringer og gjort offentlige engasjement for at alle skal bli inkludert.</p>
+                <h3>SEO</h3>
+                <p>SEO eller <span lang="en">Search Engine Optimization</span> sitt hovedmål er til for å trekke relevant trafikk slik at man kan få besøkende til din nettside til å bli kunder. Det dreier seg om at nettsiden din skal være enkel for google og andre søkemotorer å indeksere slik at nettsiden kan søkes fram av andre. På grunn av dette er det derfor viktig at nettsiden er lett for søkemotorene å indeksere, ellers vil ikke noen kunne få søkt fram nettsiden din.</p>
+            </article>
+            <h3>Tabell som tar for seg noen deler av webutvikling, og hvordan dette påvirker UU og SEO</h3>
+             <!--Nettside brukt som inspirasjon for tabellen: https://dev.to/flippedcoding/how-to-make-a-table-without-using-the-html-table-elements-5e11-->
+            <div id="tabell">
+                <div class="column-border">
+                    <div class="row-border-1" itemprop="speakable">Deler av webutvikling</div>
+                    <div class="row-border" itemprop="speakable">UU</div>
+                    <div class="row-border" itemprop="speakable">SEO</div>
+                </div>
+                <div class="column-border">
+                    <div class="row-border-1" itemprop="speakable">Koding</div>
+                    <div class="row-border" itemprop="speakable">Siden koding brukes for å bygge opp nettsiden din, er det viktig å ha en god rekkefølge på hvor ting er blitt plassert. Koden bør også være skrevet så den gir både god struktur og navigasjon. For eksempel hvis du har satt inn et bilde i koden, er det viktig å markere den med en alternativtekst tagg for å vise at det er et bilde som gir mening for innholdet på bildet. Obs hvis du mener at bildet ikke har relevant innhold for nettsiden skal alt taggen stå tom. Dette kan bli brukt på bilder som bare er til pynt.</div>
+                    <div class="row-border" itemprop="speakable">Koding handler om den funksjonelle, brukerrelaterte og designmessige delen av en nettside. Det vil bestemme hvordan siden ser ut og oppfører seg i nettleseren. For eksempel har vi semantiske tagger slik som header, main og footer som hjelper oss med å sette informasjonen i forskjellige grupper. Man bruker også metabeskrivelser på all tekst på nettsiden for å beskrive innholdet. Dette gjør att <span lang="en">google</span> eller bing finner fram din nettside lettere og fortere. Jo vanskeligere det er for nettleserne å indeksere siden din, jo vanskeligere vil det bli for brukere å finne den.</div>
+                </div>
+                <div class="column-border">
+                    <div class="row-border-1" itemprop="speakable"><span lang="en">Design</span></div>
+                    <div class="row-border" itemprop="speakable">Når det kommer til <span lang="en">design</span> og UU er det viktig å tenke på farger, kontraster og fonter som blir brukt på nettsiden din. Bruker du for eksempel grønne farger med lite kontrast vil det bli ekstremt vanskelig for en fargeblind person å lese nettsiden din, med tanke på att grønn er en av de fargene som de fleste av fargeblinde ikke kan se. Som sagt alle vil jo att nettsiden demmes skal skille seg ut, men bruker man en «fancy font» som for eksempel fonten Kolker Brush på deler av nettsiden din fordi det ser estetisk ut, kan det bli veldig vanskelig for folk med lese- og skrivevansker å lese nettsiden. Det vil altså være veldig dumt hvis tekst biten er viktig for innholdet. Derfor vil det være VELDIG lurt å bruke en mer lesbar font på nettsiden.</div> <!--Linmk brukt for eksempel av font: https://fonts.google.com/specimen/Kolker+Brush-->
+                    <div class="row-border" itemprop="speakable"><span lang="en">Design</span> er ett viktig aspekt når det kommer til nettsiden din. I tillegg til at den skal se bra ut, må den også være oversiktlig og brukervennlig. Det er derfor viktig at farger, fonter, bilder og lignende som skal bli brukt blir nøye planlagt. Siden google helst vil prioritere nettsider som er ryddige og moderne, men også lette å navigere seg rundt i. Hvis nettsiden din ikke er lett å bruke eller navigere seg rundt i, vil den mest sannsynlig ikke bli prioritert av google.</div>
+                </div>
+            </div>
+            <article>
+                <h3 itemprop="headline">Kilder som er brukt</h3>
+                <p itemprop="potentialAction"><a href="https://no.wikipedia.org/wiki/Universell_utforming">Universell Utforming</a>, lest 24. Oktober 2022 kl: 21:12, skrevet av Wikipedia.org</p>
+                <p itemprop="potentialAction"><a href="https://nettrafikk.no/sokemotoroptimalisering/hvaerseo">SEO</a>, lest 24. oktober 2022 kl: 21:46, skrevet av nettrafikk.no</p>
+                <p itemprop="potentialAction"><a href="https://www.oase.io/webutvikling">Oase.io</a>, lest 27. Oktober 2022 kl: 13:12, skrevet av Oscar Eokeland</p>
+                <p itemprop="potentialAction"><a href="https://www.uutilsynet.no/regelverk/gjeldende-regelverk-og-krav/746">UUtilsynet</a>, lest 27. Oktober 2022 kl: 13:28, skrevet av uutilsynet.no</p>
+            </article>
+            <article>
+                <img src="images/Facebook.png" alt="Facebook logo" itemprop="image">
+                <!--Referanselink for bilde brukt for Facebook: <a href="https://www.vecteezy.com/png/13212095-facebook-3d-illustration">Facebook 3d Illustration PNGs by Vecteezy</a>-->
+                <h3>Facebook</h3>
+                <p>Kontakt oss gjerne via Facebook</p>
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i>Facebook</a>
+            </article>
+            <article>
+                <img src="images/Twitter.png" alt="Twitter logo" itemprop="image">
+                <!--Referanse link for bilde brukt for Twitter: <a href="https://www.vecteezy.com/png/13191636-twitter-3d-illustration">Twitter 3d Illustration PNGs by Vecteezy</a>-->
+                <h3>Twitter</h3>
+                <p>Eller Twitter hvis det funker bedre</p>
+                <a href="https://www.twitter.com/"><i class="fa-brands fa-twitter"></i>Twitter</a>
+            </article>
+            <article>
+                <img src="images/Instagram.png" alt="Instagram logo" itemprop="image">
+                <!--Referanse link for bildet brukt for Instagram: <a href="https://www.vecteezy.com/png/13212099-instagram-3d-illustration">Instagram 3d Illustration PNGs by Vecteezy</a>-->
+                <h3>Instagram</h3>
+                <p>Ellers så har vi også Instagram</p>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i>Instagram</a>
+            </article>
+        </main>
+        <!--Her slutter hovedinnholdet-->
+        <footer>
+            <a href="#" class="fa fa-facebook"><span lang="en">Share</span></a>
+            <a href="#" class="fa fa-twitter"><span lang="en">Share</span></a>
+            <a href="#" class="fa fa-pinterest"><span lang="en">Share</span></a>
+            <!--Referanse for sosialemedier: https://www.w3schools.com/howto/howto_css_social_media_buttons.asp--> 
+            <p><a href="kontakt-oss.html" itemprop="potentialAction">Kontakt oss</a></p>
+            <p itemprop="copyrightNotice">Deleksamen 4 høst 2022 Ida Stensrud</p>
+        </footer>
+    </div>
+        <script>
+            function openNav() {
+            document.getElementById("main-menu").style.height = "100%";
+            }
+            
+            function closeNav() {
+            document.getElementById("main-menu").style.height = "0%";
+            }
+            //Referanse for ham-bar funksjonen: https://www.w3schools.com/howto/howto_js_curtain_menu.asp
+        </script>
+</body>
+</html>

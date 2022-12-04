@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+
+    <link href="font/css/fontawesome.css" rel="stylesheet">
+    <link href="font/css/brands.css" rel="stylesheet">
+    <link href="font/css/solid.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="css/analyse.css">
+    <link rel="icon" href="images/logo.png">
+    <!--Referanse for ikon kode: https://developers.google.com/search/docs/appearance/favicon-in-search-->
+    <title>Analyse</title>
+</head>
+
+<body>
+    <div id="container" itemscope itemtype="https://schema.org/Article">
+        <!--Her begynner header-->
+        <header>
+            <!--Her starter hovedmenyen-->
+            <nav>
+                <!--La til logo siden den skal den skal kunne bli trykket på omg føre til forsiden-->
+                <h3><a href="forside.html"><img id="logo" src="images/logo.png" alt="logo-bilde"></a></h3>
+                <h3><a href="forside.html"><img id="logo2" src="images/logo.png" alt="logo-bilde"></a></h3>
+                <!--Referanse for logo bildet: <a href="https://www.vecteezy.com/free-png/logo">Logo PNGs by Vecteezy</a>-->
+                <!--Inspirasjon for Logo kode i css og html: Sara Stensrud-->
+                <a href="javascript:void(0)" id="menu" onclick="openNav()" itemprop="potentialAction"><i class="fa-solid fa-bars"></i></a>
+                <ul id="main-menu">
+                    <li itemprop="potentialAction"><a id="close" onclick="closeNav()"><i class="fa-solid fa-x"></i></a></li>
+                    <li><a href="forside.html" itemprop="potentialAction">Hjem</a></li>
+                    <li><a href="uu-vs-seo.html" itemprop="potentialAction">UU vs SEO</a></li>
+                    <li><a href="cms.html" itemprop="potentialAction">CMS</a></li>
+                    <li><a href="analyse.html" itemprop="potentialAction">Analyse</a></li>
+                    <li><a href="kontakt-oss.html" itemprop="potentialAction">Kontakt oss</a></li>
+                </ul> 
+            </nav>
+        </header>
+        <!--Her slutter header og navigering-->
+        <!--La til en section for å gi den et bakgrunns-bilde-->
+        <section id="bakgrunn" itemprop="speakable">
+            <h1 itemprop="headline">Analyse</h1>
+        </section>
+        <!--Her begynner hovedinnholdet-->
+        <main>
+            <p itemprop="potentialAction"><a id="tilbake" href="forside.html">Tilbake</a></p>
+            <article itemprop="articleBody">
+                <h1 itemprop="headline">Heuretisk Analyse</h1>
+                <h3 itemprop="articleSection">Synlighet av systemstatus:</h3>
+                <p itemprop="about">Til dags dato har ikke nettsiden min noe synlige tilbakemeldinger til brukeren, men om den skulle blitt offentlig gjort kan jeg legge til en funksjon som viser hvor brukeren er på menypunktet. Det kan gjøres ved å enten legge til en strek under eller endre farge på teksten på den siden man er på.</p>
+                <h3 itemprop="articleSection">Match mellom systemet og virkelige verden:</h3>
+                <p itemprop="about">Nettsiden min har for det meste et lett og forståelig ordbruk, men inneholder noen fagbegrep eller litt vanskelige ord som man til vanlig ikke bruker i hverdagen som f.eks. indeksering eller metadata. Nettsiden har et forståelig konsept som gjør det enkelt for brukeren og navigere seg rundt i, det er ikke vanskelig å finne seg fram til informasjon i tillegg til at det er enkelt å komme seg tilbake til start siden igjen uten å bli forvirret.</p>
+                <h3 itemprop="articleSection">Brukerkontroll og frihet:</h3>
+                <p itemprop="about">Hvis brukeren har trykket inn på feil side på nettsiden min, har jeg en ganske synlig Tilbake-knapp øverst til venstre på alle innholdssidene som tar dem tilbake til forsiden. Eller hvis brukeren klarer å trykke seg inn på hamburger-menyen på mobil eller nettbrett med uhell, er det et tydelig kryss de kan trykke på for å komme seg ut av den igjen.</p>
+                <h3 itemprop="articleSection">Konsistens og standarder:</h3>
+                <p itemprop="about">Artikkelkortene på forsiden har en liten introduksjon til innholdet for artikkelen som da oppfyller brukerens forventninger. Alle ord på nettsiden har en egen betydning, det blir ikke gjenbrukt samme ord som skal bety noe annet. Dette er for at brukeren skal slippe misforståelser og forivrelser mens de er på siden.</p>
+                <h3 itemprop="articleSection">Feilforebygging:</h3>
+                <p itemprop="about">Nettsiden har blitt designet med feilforebygging i baktankene, og har gjort mest mulig for at feil skal bli unngått. Den støtter angre-funksjonen slik at brukerne skal slippe frustrasjonen med å finne tilbake til den siste siden de var på. Hvis dette skulle vært en offentlig side ville jeg prøve å gi bedre varsler for brukeren hvis de trykker vekk fra en side de ikke hadde tenkt.</p>
+                <h3 itemprop="articleSection">Anerkjennelse i stedet for tilbakekalling:</h3>
+                <p itemprop="about">For at det skal bli enklere for brukeren å navigere seg rundt på nettsiden er det viktig at man gjør mest mulig for at dem ikke skal bli belastet med å huske alt de ser på nettsiden. Derfor er alltid meny tilgjengelig for brukeren for å gjøre det enkelt for dem å finne seg fram. De kan også finne seg tilbake ved å bruke angre-funksjonen eller komme fram på forsiden med tilbake knappen på innholdssidene.</p>
+                <h3 itemprop="articleSection">Fleksibilitet og effektivitet ved bruk:</h3>
+                <p itemprop="about">Det finnes flere valg for forskjellige brukere om det er nybegynner eller ekspert. De har mulighet til å bruke artikkelkortene på forsiden for å finne fram, eller menypunktet til å navigere seg rundt. De kan da selv velge hva de vil bruke som de føler blir lettest for dem.</p>
+                <h3 itemprop="articleSection">Estetisk og minimalistisk design:</h3>
+                <p itemprop="about">Designet på nettsiden er både estetisk og minimalt. Nettsiden har ikke mange forskjellige knapper som er unødvendig eller farger og bilder som ikke passer sammen. Fargene som sagt er i harmoni med hverandre og er på samme farge spekter. I tillegg er oppsettet på siden satt opp ganske enkelt slik at brukeren ikke skal bli forvirret med masse ting på en gang.</p>
+                <h3 itemprop="articleSection">Hjelp brukere å gjenkjenne, diagnostisere og gjenopprette feil:</h3>
+                <p itemprop="about">Feilmeldinger er viktig for å hjelpe brukeren komme seg på rett vei. Til dags dato har ikke denne nettsiden dette, men som sagt skulle dette ha blitt en offentlig side ville det bli lagt stor vekt på.</p>
+                <h3 itemprop="articleSection">Hjelp og dokumentasjon:</h3>
+                <p itemprop="about">Det er også viktig å kunne hjelpe brukerne fort og enkelt hvis det trengs. Som f.eks. gi dem en liten informasjonslomme brukeren kan trykke på for å åpne. Dette er noe som nettsiden min ikke har enda, men som sagt skulle nettsiden bli offentliggjort er dette noe som ville bli endret på.</p>   
+            </article>
+            <h2>Analyse Tabell:</h2>
+            <div id="tabell">
+                <div class="column-border">
+                    <div class="row-border-1" itemprop="speakable">Analyse</div>
+                    <div class="row-border" itemprop="speakable">Før</div>
+                    <div class="row-border" itemprop="speakable">Etter</div>
+                </div>
+                <div class="column-border">
+                    <div class="row-border-1" itemprop="speakable">SEO</div>
+                    <div class="row-border" itemprop="speakable">Som jeg har skrevet på innholdssiden for UU vs SEO, SEO er til for at nettsiden din skal bli lettere å finne for andre. En måte dette kan bli gjort på er å bruke noe som heter mikrodata på nettsiden din. På den måten setter man på tagger som informerer om hva de forskjellige dataene er. Dette er noe min nettside manglet og ikke hadde tenkt over når nettsiden først ble lagd.</div>
+                    <div class="row-border" itemprop="speakable">Nå som jeg har endret så jeg har fått inn mikrodata på nettsiden, vil det nå bli enklere for søkemotorer og forhåpentligvis vil bli lettere å finne for andre.</div>
+                </div>
+                <div class="column-border">
+                    <div class="row-border-1" itemprop="speakable">UU</div>
+                    <div class="row-border" itemprop="speakable">UU er til for at alle skal bli inkludert uansett funksjonsevne. Nettsiden min har en vennlig font som er lett leselig. Fargene er annerledes fra hverandre og er leselig for fargeblindhet, men noe jeg kan endre på er kontrasten på nettsiden. Det kan bli vanskelig å tyde hva som står på enkelte steder fordi teksten er litt for lys for bildet teksten ligger over, eller den allerede lyse bakgrunnen. Man kan se mer på bildene jeg har lagt til under.</div>
+                    <div class="row-border" itemprop="speakable">Nå har kontrasten på nettsiden blitt mye bedre, det er enklere å se forskjell mellom bakgrunn og tekst nå som teksten har blitt mørkere. Det er også lettere for fargeblinde å lese teksten nå som kontrasten er større enn den var. I tillegg har det blitt tydligere når du hovrer en link ved att den blir tydligere lysere enn det den gjorde før. Som man kan se på bildene under så er det en error som vises i validatoren, den sier at det er en tom link på siden. men hvis man leser koden så er det ikke noe link som mangler, så jeg er litt usikker på hva den mener der.</div>
+                </div>
+            </div>
+
+            <h2>Bilder for Analyse tabell</h2>
+            <h3 itemprop="speakable">Før:</h3>
+            <img id="før-endring" src="images/Before-validation.png" alt="bilde av nettside før endringer">
+            <img id="kode-før" src="images/kode-før.png" alt="bilde av kode del 1 før endringer">
+            <img id="kode-1-før" src="images/kode-før-1.png" alt="bilde av kode del 2 før endringer">
+            <img id="wave-validation" src="images/kode-før-after-wave-validation.png" alt="bilde av validering før endringer del 1">
+            <img id="wave-validation-1" src="images/kode-før-after-wave-validation-1.png" alt="bilde av validering før endringer del 2">
+            <h3 itemprop="speakable">Etter:</h3>
+            <img id="etter-endringer" src="images/etter-endringer.png" alt="bilde av nettside etter endringer">
+            <img id="kode-etter" src="images/kode-etter.png" alt="bilde av kode del 1 etter endringer">
+            <img id="kode-1-etter" src="images/kode-1-etter.png" alt="bilde av kode del 2 etter endringer">
+            <img id="wave-validation-after" src="images/wave-evaluation-etter.png" alt="bilde av validering etter endringer del 1">
+            <img id="wave-validation-1-after" src="images/wave-evaluation-etter-1.png" alt="bilde av validering etter endringer del 2">
+
+            <h2><a href="Tilgjengelighetserklæring.htm">Tilgjengelighetserklæring</a></h2>
+
+            <article>
+                <h3 itemprop="headline">Kilder som er brukt</h3>
+                <p itemprop="potentialAction"><a href="https://www.nngroup.com/articles/ten-usability-heuristics/">10 Brukervennlighetsheuristikk</a>, lest 28. November 2022 kl: 19:48, skrevet av Jakob Nielsen</p>
+                <p itemprop="potentialAction"><a href="https://www.uutilsynet.no/tilgjengelighetserklaering/wcag-sjekkliste-utfylling-av-tilgjengelighetserklaering/1333">Tilgjengelighetserklæring</a>, lest 28. November 2022 kl: 22:29, skrevet av uutilsynet.no</p>
+                <p itemprop="potentialAction"><a href="https://www.uutilsynet.no/wcag-standarden/wcag-20-standarden/86">WCAG Standarden</a>, lest 29. November 2022 kl: 14:26, skrevet av uutilsynet.no</p>
+                <p itemprop="potentialAction"><a href="https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#multiple-ways">WCAG21</a>, lest 29. November 2022 kl: 14:52, skrevet av E. Eggert, S. Abou-Zahra, G. Vanderheiden, L. G. Reid, B. Cladwell, S. L. Henry og G. Lemon</p>
+                <p itemprop="potentialAction"><a href="https://schema.org/Article">Artikkel tagger</a>, lest 29. November 2022 kl: 17:47, skrevet av Schema.org</p>
+            </article>
+            <article>
+                <img src="images/Facebook.png" alt="Facebook logo" itemprop="image">
+                <!--Referanselink for bilde brukt for Facebook: <a href="https://www.vecteezy.com/png/13212095-facebook-3d-illustration">Facebook 3d Illustration PNGs by Vecteezy</a>-->
+                <h3>Facebook</h3>
+                <p>Kontakt oss gjerne via Facebook</p>
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i>Facebook</a>
+            </article>
+            <article>
+                <img src="images/Twitter.png" alt="Twitter logo" itemprop="image">
+                <!--Referanse link for bilde brukt for Twitter: <a href="https://www.vecteezy.com/png/13191636-twitter-3d-illustration">Twitter 3d Illustration PNGs by Vecteezy</a>-->
+                <h3>Twitter</h3>
+                <p>Eller Twitter hvis det funker bedre</p>
+                <a href="https://www.twitter.com/"><i class="fa-brands fa-twitter"></i>Twitter</a>
+            </article>
+            <article>
+                <img src="images/Instagram.png" alt="Instagram logo" itemprop="image">
+                <!--Referanse link for bildet brukt for Instagram: <a href="https://www.vecteezy.com/png/13212099-instagram-3d-illustration">Instagram 3d Illustration PNGs by Vecteezy</a>-->
+                <h3>Instagram</h3>
+                <p>Ellers så har vi også Instagram</p>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i>Instagram</a>
+            </article>
+        </main>
+        <!--Her slutter hovedinnholdet-->
+        <footer>
+            <a href="#" class="fa fa-facebook"><span lang="en">Share</span></a>
+            <a href="#" class="fa fa-twitter"><span lang="en">Share</span></a>
+            <a href="#" class="fa fa-pinterest"><span lang="en">Share</span></a>
+            <!--Referanse for sosialemedier: https://www.w3schools.com/howto/howto_css_social_media_buttons.asp--> 
+            <p><a href="kontakt-oss.html" itemprop="potentialAction">Kontakt oss</a></p>
+            <p itemprop="copyrightNotice">Deleksamen 4 høst 2022 Ida Stensrud</p>
+        </footer>
+    </div>
+        <script>
+            function openNav() {
+            document.getElementById("main-menu").style.height = "100%";
+            }
+            
+            function closeNav() {
+            document.getElementById("main-menu").style.height = "0%";
+            }
+            //Referanse for ham-bar funksjonen: https://www.w3schools.com/howto/howto_js_curtain_menu.asp
+        </script>
+</body>
+</html>
